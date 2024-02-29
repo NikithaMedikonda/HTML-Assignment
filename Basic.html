@@ -1,56 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Sample page</title>       
-    </head>
-    <body>
-        <header>
-            <h1>Welcome to my World of Arts</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    
-        <main>
-            <section>
-                <h2>About Me</h2>
-                <p>This is a basic website built using HTML. I used various tags such as headings, paragraphs, lists, and links.This shows my interests.You can contact me for any type of sketches.</p>
-            </section>
-            
-            <section>
-                <h2>Services</h2>
-                <ul>
-                    <li>Crafts</li>
-                    <li>Drawing</li>
-                    <li>Paintng</li>
-                    <li>Pencil Sketches</li>
-                    <li>Photography</li>
-                </ul>
-            </section>
-            
-            <section>
-                <h2>Gallery</h2>
-                <span>
-                    <img src="https://e0.pxfuel.com/wallpapers/774/971/desktop-wallpaper-landscape-pencil-drawing-nature-page-6.jpg" alt="sketch" width="100 px" height="100 px">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Photo_of_Photoshoot_in_Ayia_Napa%2C_Cyprus.jpg" alt="a girl" width="100  px" height="100 px">
-                </span>
-            </section>
-            <section>
-                <h2>Contact Us</h2>
-                <p>You can reach us via email at <a href="nikithamedikonda@everest.engineering">nikithamedikonda@everest.engineering</a>.</p>
-            </section>
-        </main>
-    
-        <footer>
-            <p>&copy; 2024 Basic Website. All rights reserved.</p>
-        </footer>
-    </body>
+    <title>Sample page</title>
+</head>
+<body>
+<header style="text-align: center; color: blueviolet;">
+    <h1>Welcome to my World of Arts</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>This is a basic website built using HTML. I used various tags such as headings, paragraphs, lists, and links. This shows my interests. You can contact me for any type of sketches.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Crafts</li>
+            <li>Drawing</li>
+            <li>Painting</li>
+            <li>Pencil Sketches</li>
+            <li>Photography</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <span>
+            <img src="https://e0.pxfuel.com/wallpapers/774/971/desktop-wallpaper-landscape-pencil-drawing-nature-page-6.jpg" alt="sketch" width="100 px" height="100 px">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Photo_of_Photoshoot_in_Ayia_Napa%2C_Cyprus.jpg" alt="a girl" width="100 px" height="100 px">
+        </span>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>You can reach us via email at <a href="mailto:nikithamedikonda@everest.engineering">nikithamedikonda@everest.engineering</a>.</p>
+    </section>
+
+    <!-- Adding the form for requesting services -->
+    <section id="request-services">
+        <h2>Request Services</h2>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="contact">Contact:</label><br>
+            <input type="number" id="number" name="number"><br>
+            <label for="service">Select Service:</label><br>
+            <select id="service" name="service">
+                <option value="Crafts">Crafts</option>
+                <option value="Drawing">Drawing</option>
+                <option value="Painting">Painting</option>
+                <option value="Pencil Sketches">Pencil Sketches</option>
+                <option value="Photography">Photography</option>
+            </select><br>
+            <label for="message">Additional Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</div>
+
+<footer style="text-align: center;background-color: lavender;">
+    <p>&copy; 2024 Basic Website. All rights reserved.</p>
+</footer>
+</body>
 </html>
