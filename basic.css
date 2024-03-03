@@ -1,0 +1,88 @@
+body {
+    margin: 20px;
+}
+
+.container {
+    border: 2px solid black;
+    padding: 20px;
+    background-color: lavender;
+}
+
+.heading{
+    text-align: center;
+}
+.nav-item{
+    text-decoration: none;
+    color: black;
+    margin-left: 1%;
+}
+.nav-item:hover{
+    color: blueviolet;
+}
+
+.font{
+    font-size: 20px;
+}
+.navbar{
+    background-color: lavenderblush;
+    padding: 1px;
+    font-size: 20px;
+   
+}
+
+header, nav ul, section, footer {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: darkviolet;
+}
+
+/* Specific width for input fields within the form */
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea {
+    width: 50%; /* Or any other value you prefer */
+}
